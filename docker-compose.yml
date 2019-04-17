@@ -4,9 +4,14 @@ services:
 
    rundeck:
       #servico rundeck
-      image: rewerdj/rundeck-wagner
+      image: rundeck
       #image: rundeck
       hostname: 192.168.56.31.nip.io
       ports:
         - 4440:4440
+      volumes:
+        - vol01:/usr/local/rundeck
+
+volumes:
+  vol01:
      
